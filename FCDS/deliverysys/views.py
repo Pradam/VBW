@@ -1,6 +1,6 @@
 """This is core file to keep track on delivery of products."""
 # from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import (TemplateView, CreateView)
 # Create your views here.
 
 
@@ -15,3 +15,11 @@ class HomePageView(TemplateView):
 
 class HuskListPage(TemplateView):
     template_name = "husks_list.html"
+
+
+class HuskAddPage(TemplateView):
+    template_name = "husk_add.html"
+
+
+class CoalPageList(TemplateView):
+    template_name = "coal_list.html"
